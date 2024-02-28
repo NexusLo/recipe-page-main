@@ -220,15 +220,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin:auto
     }
     
     .color-div {
         background-color: hsl(30, 54%, 90%);
         width: 50%;
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column; 
         justify-content: center;
+        margin:auto
     }
     
     .main-div {
