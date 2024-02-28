@@ -255,7 +255,7 @@
     
     .prep-div {
         background-color: hsl(330, 100%, 98%);
-        padding: 1px;
+        padding: 2px;
         border-radius: 5px;
         margin: 30px auto 0px auto;
         padding-top: -0.5px;
@@ -280,7 +280,7 @@
     }
     
     .title {
-        font-family: 'Outfit';
+        font-family: 'YoungSerif';
         margin: 30px 20px -1px 20px;
         font-size: 2rem;
         margin-top: 30px;
@@ -361,7 +361,10 @@
         margin-left: -13px; /* Décalage supplémentaire vers la gauche */
     }
 
-    .olr {counter-reset: repas;} /* on initialise et nomme un compteur */
+    .olr {
+        counter-reset: repas;
+        margin-bottom: 305px;
+    } /* on initialise et nomme un compteur */
     .olliste {
         list-style-type: none;
         counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
