@@ -1,0 +1,412 @@
+@font-face {
+    font-family: "YoungSerif";
+    src: url(../../assets/fonts/young-serif/YoungSerif-Regular.ttf) ;
+    }
+@font-face {
+    font-family: "Outfit";
+    src: url(../../assets/fonts/outfit/static/Outfit-Regular.ttf);
+    }
+/*- Nutmeg: hsl(14, 45%, 36%)
+- Dark Raspberry: hsl(332, 51%, 32%)*/
+
+/*- White: hsl(0, 0%, 100%)
+- Rose White: hsl(330, 100%, 98%)
+- Eggshell: hsl(30, 54%, 90%)
+- Light Grey: hsl(30, 18%, 87%)
+- Wenge Brown: hsl(30, 10%, 34%)
+- Dark Charcoal: hsl(24, 5%, 18%)*/
+
+.wrapper{
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.color-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-div{
+    background-color: white ;
+    width: 45%;
+    height: 100%;
+}
+
+.img-div{
+    border-radius: 10px;
+}
+
+.imgEgg{
+    width: 100%;
+}
+.head-div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.prep-div{
+    margin-inline: auto;
+    background-color: hsl(330, 100%, 98%);
+    margin-top: 30px;
+    padding: 3px;
+    border-radius: 5px;
+    padding-top: -0.5px;
+    width: 80%;
+}
+
+.ul-div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ol-div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.olr{
+    
+}
+
+.macro-div {
+    margin-top: 10px;
+    margin-bottom: -7.5px;
+}
+
+.table-div {
+    list-style: none;
+}
+
+.title {
+    font-family: 'YoungSerif';
+    margin: 30px 20px -1px 20px;
+    font-size: 2rem;
+    margin-top: 30px;
+    font-weight: 400;
+}
+
+.subtitle1 {
+    color: hsl(332, 51%, 32%);
+    font-family: 'Outfit';
+    font-size: 1.2rem;
+    margin-bottom: -10px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.subtitle2 {
+    color: hsl(14, 45%, 36%);
+    font-family: 'YoungSerif';
+    font-size: 1.6rem;
+    margin-bottom:0px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: 400;
+}
+.lg-border{
+    border: 1px solid hsla(30, 18%, 87%, 0.418);
+    width: 86%;
+    margin: 30px auto 0px auto;
+}
+.nut-border{
+    border: 1px solid hsla(30, 18%, 87%, 0.418);
+    width: 86%;
+    margin: 10px 200px 10px 0px;
+}
+
+.macrodesc {
+    margin-top: 17px;
+    margin-bottom: 25px;
+    margin-left: 21px;
+}
+.rcpdesc{
+    font-family: 'Outfit';
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 20px;
+    color: hsla(15, 4%, 18%, 0.747);
+}
+.text {
+    font-family: 'Outfit';
+    font-size: 1rem;
+    line-height: 1.5;
+    color: hsl(30, 10%, 34%);
+    font-weight: 100;
+}
+
+.liste,
+.ingliste,
+.nutliste{
+    line-height: 1.6;
+    list-style-type: none; 
+    padding: 0; 
+    padding-right: 30px;
+    margin-left: 0px; /* Décalage vers la gauche */
+}
+
+.liste:before,
+.ingliste:before{
+    content: "\2022"; /* Utilise un point noir comme puce */
+    color: hsl(332, 51%, 32%); /* Change la couleur de la puce */
+    margin-right: 1.9rem; /* Espace entre la puce et le texte */
+}
+
+.liste:before {
+    margin-left: -10px;
+}
+
+.ingliste:before {
+    color: hsl(14, 45%, 36%); /* Change la couleur de la puce */
+    margin-left: -13px; /* Décalage supplémentaire vers la gauche */
+}
+.ingliste{
+    margin-bottom: 7.5px;
+}
+.olr {counter-reset: repas;} /* on initialise et nomme un compteur */
+.olliste {
+    list-style-type: none;
+    counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-right: 20px;
+    
+}
+.olliste:before {
+    content: counter(repas) "."; /* on affiche le compteur */
+    margin-right: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: hsl(14, 45%, 36%);	
+    margin-left: -13px;
+}
+.nutliste:before {
+    color: hsl(14, 45%, 36%); /* Change la couleur de la puce */
+    margin-left: -15px; /* Décalage supplémentaire vers la gauche */
+}
+.pad-left1 {
+    display: inline-block;
+    margin-left: 50px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.pad-left2 {
+    display: inline-block;
+    margin-left: 65px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.pad-left3 {
+    display: inline-block;
+    margin-left: 55px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+.pad-left4 {
+    display: inline-block;
+    margin-left: 85px;
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;   
+}
+
+@media (min-width: 961px) {
+    .wrapper {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .color-div {
+        background-color: hsl(30, 54%, 90%);
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    
+    .main-div {
+        background-color: white;
+        width: 80%;
+        height: 90%;
+        border-radius: 10px;
+    }
+    
+    .img-div {
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 30px;
+        width: 100%;
+    }
+    
+    .imgEgg {
+        width: 90%;
+        border-radius: 10px;
+    }
+    
+    .head-div {}
+    
+    .prep-div {
+        background-color: hsl(330, 100%, 98%);
+        padding: 1px;
+        border-radius: 5px;
+        margin: 30px auto 0px auto;
+        padding-top: -0.5px;
+        width: 90%;
+    }
+    
+    .ul-div {}
+    
+    .ol-div {
+        width: 90%;
+        margin-right: 40px;
+
+    }
+    
+    .macro-div {
+        margin-top: 10px;
+        margin-bottom: -7.5px;
+    }
+    
+    .table-div {
+        list-style: none;
+    }
+    
+    .title {
+        font-family: 'Outfit';
+        margin: 30px 20px -1px 20px;
+        font-size: 2rem;
+        margin-top: 30px;
+    }
+    
+    .subtitle1 {
+        color: hsl(332, 51%, 32%);
+        font-family: 'Outfit';
+        font-size: 1.2rem;
+        margin-bottom: -10px;
+        margin-left: 20px;
+        margin-top: 15px;
+    }
+    
+    .subtitle2 {
+        color: hsl(14, 45%, 36%);
+        font-family: 'YoungSerif';
+        font-size: 1.6rem;
+        margin-bottom:0px;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-weight: 400;
+    }
+    .lg-border{
+        border: 1px solid hsla(30, 18%, 87%, 0.418);
+        width: 90%;
+        margin: 30px auto 0px auto;
+    }
+    .nut-border{
+        border: 1px solid hsla(30, 18%, 87%, 0.418);
+        width: 95%;
+        margin: 10px auto 10px auto;
+    }
+    
+    .macrodesc {
+        margin-top: 17px;
+        margin-bottom: 25px;
+        margin-left: 21px;
+    }
+    .rcpdesc{
+        font-family: 'Outfit';
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-left: 20px;
+        color: hsla(15, 4%, 18%, 0.747);
+    }
+    .text {
+        font-family: 'Outfit';
+        font-size: 1rem;
+        line-height: 1.5;
+        color: hsl(30, 10%, 34%);
+        font-weight: 100;
+    }
+    
+    .liste,
+    .ingliste,
+    .nutliste{
+        line-height: 1.6;
+        list-style-type: none; 
+        padding: 0; 
+        padding-right: 30px;
+        margin-left: 0px; /* Décalage vers la gauche */
+    }
+    
+    .liste:before,
+    .ingliste:before{
+        content: "\2022"; /* Utilise un point noir comme puce */
+        color: hsl(332, 51%, 32%); /* Change la couleur de la puce */
+        margin-right: 1.9rem; /* Espace entre la puce et le texte */
+    }
+    
+    .liste:before {
+        margin-left: -10px;
+    }
+    
+    .ingliste:before {
+        color: hsl(14, 45%, 36%); /* Change la couleur de la puce */
+        margin-left: -13px; /* Décalage supplémentaire vers la gauche */
+    }
+
+    .olr {counter-reset: repas;} /* on initialise et nomme un compteur */
+    .olliste {
+        list-style-type: none;
+        counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
+        margin-bottom: 5px;
+        text-align: justify;
+        
+    }
+    .olliste:before {
+        content: counter(repas) "."; /* on affiche le compteur */
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 1rem;
+        color: hsl(14, 45%, 36%);	
+        margin-left: -13px;
+    }
+    .olliste li {
+        color: red
+    }
+    
+    .nutliste:before {
+        color: hsl(14, 45%, 36%); /* Change la couleur de la puce */
+        margin-left: -15px; /* Décalage supplémentaire vers la gauche */
+    }
+    .pad-left1 {
+        display: inline-block;
+        margin-left: 250px;
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    .pad-left2 {
+        display: inline-block;
+        margin-left: 265px;
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    .pad-left3 {
+        display: inline-block;
+        margin-left: 255px;
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
+    }
+    .pad-left4 {
+        display: inline-block;
+        margin-left: 285px;
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;   
+    }
+}
