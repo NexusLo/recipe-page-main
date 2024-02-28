@@ -363,7 +363,7 @@
 
     .olr {
         counter-reset: repas;
-        margin-bottom: 305px;
+        margin-bottom: 35px;
     } /* on initialise et nomme un compteur */
     .olliste {
         list-style-type: none;
